@@ -1,0 +1,58 @@
+.quote-card{
+    padding: 2rem;
+     box-shadow: 0 2px 20px -10px rgb(13 28 39 / 60%);
+}
+
+.profile-social-links {
+    padding: 15px 20px;
+    margin: 50px 0 0;
+    box-sizing: border-box;
+}
+
+.profile-social-links li {
+    list-style: none;
+    margin: -5px 0 0;
+    padding: 0;
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+
+.facebook {
+    background: linear-gradient(45deg,#3b5998,#0078d7);
+    box-shadow: 0 4px 10px rgb(43 98 169 / 50%);
+}
+
+.profile-social-links li a svg {
+    width: 24px;
+}
+
+.profile-social-links li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    padding: 0.5em;
+    position: relative;
+    overflow: hidden!important;
+    border-radius: 50%;
+}
+
+.twitter {
+    background: linear-gradient(45deg,#1da1f2,#0e71c8);
+    box-shadow: 0 4px 10px rgb(19 127 212 / 70%);
+}
+
+.instagram {
+    background: linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+    box-shadow: 0 4px 10px rgb(120 64 190 / 60%);
+}
+
+.linkedin {
+    background: linear-gradient(45deg,#1769ff,#213fca);
+    box-shadow: 0 4px 10px rgb(27 86 231 / 70%);
+}
+
+.quote-container{
+    margin: 20%;
+}
