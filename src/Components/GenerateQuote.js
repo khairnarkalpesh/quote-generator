@@ -19,18 +19,23 @@ function GenerateQuote() {
     <>
     <div className='container'>
         <div className='row justify-content-center'>
-          <div className='col-12 col-md-8 col-lg-6 quote-container'>
-            <div className='quote-card text-center'>
-              <p>{content}</p>
+          <div className='col-12 col-md-8 col-lg-6 quote-container row justify-content-center'>
+            <div className='quote-card col-10'>
+              <h3 className='text-center'>{content}</h3>
               </div>
+            
+            <div className='col-8 col-md-6 my-5 justify-content-center'>
+              <button className='btn bg-secondary'>Copy</button>
+              <button className='btn bg-primary float-end' onClick={generateQuote}>New Quote</button>
+            </div>
+
             <div className='row'>
-              <ul class="profile-social-links mb-3 row justify-content-center">
-                <li className='col-6'><a class="facebook" target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a class="instagram" target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a class="twitter" target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a class="linkedin" target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a class="linkedin" target="_blank" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a class="linkedin" target="_blank" href="#"><i class="fa-solid fa-copy"></i></a></li>
+              <ul className="profile-social-links mb-3 row justify-content-center">
+                <li className='col-6'><a className="facebook" target="_blank" href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
+                <li><a className="instagram" target="_blank" href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                <li><a className="twitter" target="_blank" href="#"><i className="fa-brands fa-twitter"></i></a></li>
+                <li><a className="linkedin" target="_blank" href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a className="whatsapp" target="_blank" href={"whatsapp://send?text="+content+" -"+author}><i className="fa-brands fa-whatsapp"></i></a></li>
                 </ul>
             </div>
           </div>

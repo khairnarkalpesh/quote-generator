@@ -1,12 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Redressed&display=swap');
 .quote-card{
     padding: 2rem;
      box-shadow: 0 2px 20px -10px rgb(13 28 39 / 60%);
-}
-
-.profile-social-links {
-    padding: 15px 20px;
-    margin: 50px 0 0;
-    box-sizing: border-box;
 }
 
 .profile-social-links li {
@@ -14,7 +10,7 @@
     margin: -5px 0 0;
     padding: 0;
     float: left;
-    width: 15%;
+    width: 20%;
     text-align: center;
 }
 
@@ -53,6 +49,26 @@
     box-shadow: 0 4px 10px rgb(27 86 231 / 70%);
 }
 
+.whatsapp {
+    background: linear-gradient(45deg,#00ff37,#11a330);
+    box-shadow: 0 4px 10px rgba(15, 230, 26, 0.7);
+}
 .quote-container{
     margin: 20%;
+}
+
+.blockquote {
+font-weight: bold;
+font-size:45px;
+color:#889c0b;
+}
+
+h3{
+    font-family: 'Redressed', cursive;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.btn{
+    color: #fff;
 }
