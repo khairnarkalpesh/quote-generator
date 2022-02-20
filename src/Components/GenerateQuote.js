@@ -13,8 +13,26 @@ function GenerateQuote() {
     useEffect(()=>{
         generateQuote();
     }, [])
+    
     const { content, author } = quoteData;
+    
+    const copyQuote = () => {
+      /* Get the text field */
+      var copyText = content;
+    
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    
+       /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText);
+    
+      /* Alert the copied text */
+      alert("Copied the text: " + copyText);
+    }
+
     console.log(quoteData)
+
   return (
     <>
     <div className='container'>
@@ -22,10 +40,12 @@ function GenerateQuote() {
           <div className='col-12 col-md-8 col-lg-6 quote-container row justify-content-center'>
             <div className='quote-card col-10'>
               <h3 className='text-center'>{content}</h3>
-              </div>
+              <i className='mt-3 float-end'>- {author}</i>
             
+            </div>
+
             <div className='col-8 col-md-6 my-5 justify-content-center'>
-              <button className='btn bg-secondary'>Copy</button>
+              <button className='btn bg-secondary' onClick={() =>  navigator.clipboard.writeText(content)}>Copy</button>
               <button className='btn bg-primary float-end' onClick={generateQuote}>New Quote</button>
             </div>
 
